@@ -4,8 +4,7 @@ jdk: oraclejdk8
 addons:
   sonarcloud:
     organization: "coder-chenzhi-github"
-    token:
-      secure: "ab07f5b9d6fb35a45d762b6dfdd982299b876f1c"
+
 
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
