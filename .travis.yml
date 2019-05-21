@@ -9,10 +9,10 @@ addons:
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   - >
-      mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install 
-        sonar:sonar -Dsonar.projectKey=coder-chenzhi_spring-petclinic 
-                    -Dsonar.organization=coder-chenzhi-github 
-                    -Dsonar.host.url=https://sonarcloud.io 
+      mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install \
+        sonar:sonar -Dsonar.projectKey=coder-chenzhi_spring-petclinic \
+                    -Dsonar.organization=coder-chenzhi-github \
+                    -Dsonar.host.url=https://sonarcloud.io \
                     -Dsonar.login=$SONAR_TOKEN
 
 cache:
